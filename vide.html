@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Activité</title>
+		<link rel="stylesheet" href="css.css"> <!-- Remplacer css.css par le lien de votre feuille de style. -->
+		<meta charset="UTF-8">
+
+	</head>
+	
+	<body>
+	
+	<header>
+		<div id="banniere"></div>
+	
+		<div class="container">
+			<img id="picture" src="tete.png" />
+		</div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript">
+			var marqeeJs = {
+				animate: function(){
+					var me = this;
+					$('#picture').animate({
+						right: 1000
+					}, 5000, function(){
+						$('#picture').css('right', '-200px');
+						me.animate();
+					});
+				},
+				_initialize: function(){
+					this.animate();
+				}
+			}
+			marqeeJs._initialize();
+		</script>
+  
+	</header>
+	
+	 <nav> <!-- Mon menu -->
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="vide.html">Y'a rien là</a></li>
+			<li><a href="illustration.html">Illustration</a></li>
+	</nav>
+	
+	<span><a href="#top"><img src="top.png"/ class="boutton"></a></span>
+		
+			<div><h1 align="center">Je vous l'avais dit...</h1>
+			<p style="text-align:center">Maintenant il ne reste plus qu'a revenir sur Accueil 👆<br/><br/>
+			<img class="macron" src="macron.png" alt="Macron"/></p></div>
+	
+		<footer>
+			<div id="footer">
+			<p>&copy; 2022 - Non c'est une blague y'a aucun copyright. <img class="image" src="pegi3.jpg"/ alt="pegi 3"></p>
+			</div>
+		</footer>
+	
+	</body>
+	
+</html>

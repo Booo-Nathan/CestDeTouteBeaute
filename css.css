@@ -1,0 +1,182 @@
+body{
+	background-color: #CDF0C4; /* couleur de fond */
+	overflow-x: hidden; 
+	}
+
+h1{
+	color:#ff0000;  /* couleur du texte */
+	font-size: 3em; /* taille du texte */
+	}
+	
+h2{
+	color:orange;
+	font-size: 2em;
+	}	
+	
+p{
+	text-align:justify; /* On justifie l'alignement des paragraphes */
+	font-size: 15px;
+	}
+	
+	
+#banniere{
+	background-image: url("banniere.png");
+	height: 256px; /* taille horizontale */
+	width: 687px; /* taille verticale */
+	border-radius: 10px; /* sert à arrondir les bordures de l'image */
+	margin: auto; /* centre l'image */
+	margin-bottom: -90px;
+	}
+	
+.container{
+	width: 1000px;
+	height: 150px;
+	margin:0 auto;
+	position: relative;
+	top:0px;
+	left: 780px;
+	}
+	
+img{
+	position: relative;
+	width: 120px;
+	height: 140px;
+	
+	}
+	
+nav{
+	padding: 0; /* marge intérieures */ margin: 0; /* marges */
+	text-align: center; /* centre le texte */
+	}
+	
+nav li{
+	display: inline;
+	list-style: none; /* Nécessaire pour IE7 */
+	}
+	
+nav a{
+	display: inline-block; /* type d'affichage */
+	margin: 0 40 3 40px; /* marge HAUT DROITE BAS GAUCHE */
+	background: #ACC9A5;
+	width: 120px;
+	height: 30px;
+	text-decoration: none;
+	color: #FFF;
+	line-height: 3 50 3 50px; /* interligne */
+	padding: 0 50px;
+	font-family: Open Sans;
+	font-size: 28px;
+	}
+	
+nav a:hover{ background: gold; }
+
+table{
+	/* border: none;*/
+	border-collapse: collapse;
+	text-align: center; /* centre tous les textes a l'intérieur du tableau */
+	width: 95%; /* Le tableau prend 95% de la page */
+	margin: auto; /* centre le tableau */
+	margin-bottom: 10px;
+	}
+	
+tr {
+	background-color: white;
+	}
+	
+td { 
+	border : 2px solid black; 
+	padding: 5px; /* On aggrandi la taille des cellules pour pas que ça fasse trop compressé */
+	margin: 5px; /* on décolle les bords de 5px */
+	}
+	
+#interv{
+	background-color: yellow;
+	}
+	
+#tel{
+	background-color: orange;
+	}
+	
+caption{
+	font-size: 30px;
+	color: red;
+	text-decoration: underline;
+	padding-bottom: 10px;
+	}
+	
+th{
+	background-color: black;
+	height: 45px;
+	border: ridge 1.5px;
+	color: #FFF;
+	}
+	
+.macron {
+	width:15%;
+	height:15%;
+	margin: auto; /* On le centre à peu près */
+	margin-bottom: -19px;
+	}
+
+span.box{
+	position: absolute;
+	margin-top:-516px;
+	margin-left: 500px;
+	
+	}
+
+.jc {
+	width:20%;
+	height:20%;
+	text-align: center;
+	margin-left: 500px;
+	margin-bottom: -501px;
+	position: relative;
+	}
+	
+.bulle{
+	position: relative;
+	width:32%;
+	height:32%;
+	margin-left: 650px;
+	margin-bottom: -300px;
+	}
+	
+.yt{
+	position: relative;
+	margin-left: 690px;
+	margin-bottom: -255px;
+	}
+
+.image{
+	width: 20px;
+	height:20px;
+	}
+
+#footer{
+	background-color: black;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	width: 101%;
+	margin-bottom: -7px;
+	margin-left: -8px;
+	margin-right: auto;
+	/* justify-content: center; /* centre le contenu */
+	font-size: 20px;
+	display: flex;
+	}
+	
+#footer p{
+		margin-left: 20px;
+	}
+	
+.boutton{
+	z-index:1;
+	width: 70px;
+	height: 70px;
+	position: fixed;
+	margin-left: 95%;
+	margin-top: 15%;
+	}

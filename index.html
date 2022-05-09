@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Accueil</title>
+		<link rel="stylesheet" href="css.css"> <!-- Remplacer css.css par le lien de votre feuille de style. -->
+		<meta charset="UTF-8">
+	</head>
+	
+	<body id="top">
+	
+	<header>
+		<div id="banniere"></div>
+	
+		<div class="container">
+			<img id="picture" src="tete.png" />
+		</div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript">
+			var marqeeJs = {
+				animate: function(){
+					var me = this;
+					$('#picture').animate({
+						right: 1000
+					}, 5000, function(){
+						$('#picture').css('right', '-200px');
+						me.animate();
+					});
+				},
+				_initialize: function(){
+					this.animate();
+				}
+			}
+			marqeeJs._initialize();
+		</script>
+  
+	</header>
+	
+	
+		<nav> <!-- Mon menu -->
+			<li><a href="index.html" >Accueil</a></li>
+			<li><a href="vide.html">Y'a rien là</a></li>
+			<li><a href="illustration.html">Illustration</a></li>
+		</nav>
+		
+		<span><a href="#top"><img src="top.png"/ class="boutton"></a></span>
+	
+		<h1>Titre de mon h1</h1>
+		
+		<p>Voici un exemple de texte en <b>gras</b> ou bien <s>barré</s>, en <em>italique</em> mais encore <u>souligné</u> </br> <!-- </br> est une balise orpheline -->
+		Ceci est une 2e ligne de texte, le saut à la ligne a été fait grâce à la balise < br >
+		</p>
+		
+		<!-- <img src="montelicable.png" alt="Montelicable"/> <!-- img = balise orpheline -->
+		
+		
+		<h2>HTML</h2>
+		<ul><strong><em>Mon ul peut avoir un titre</em></strong> <!-- ul = unordered list la puce sera un . -->
+			<li>La structure</li>
+			
+				<p>Une page HTML est un simple fichier contenant du texte formatté avec des balises HTML. Par convention l'extension donnée au fichier est .htm ou .html, mais une page web peut potentiellement porter n'importe quelle extension.
+Une page web peut être construite à partir du plus basique des éditeurs de texte (une application bloc-note par exemple), mais il existe des éditeurs beaucoup plus évolués. </li>
+			
+			<li>Les balises</p>
+			
+				<p>La plupart des balises vont par paires, avec une «balise ouvrante» et une «balise fermante». Certaines balises sont dites "oprheline" et n'ont pas besoin d'être fermées.</p>
+		</ul>
+		
+		<h2>CSS</h2>
+		<ul> 
+			<li>IMPORTANT</li>
+				<p>Ne pas oublier les ; à la fin et d'ouvrir/fermer avec les accolades { et }</p>
+			<li>Commentaires</li>
+				<p>Pour écrire un commentaire sur la feuille de style CSS, on utilie /* et */</p>
+		</ul>
+		
+		<h2>OL - Organised list</h2>
+		<ol> <!-- ol = ordered list la puce sera un chiffre -->
+			<li>Article premier</li>
+				<p>On vois que les listes organisées ont une puce numérotée et non pas un simple point.</p>
+		</ol>
+		
+		<span class="box" width="300px" height="300px">
+			<img class="jc" src="JC.png" alt="JC"/>
+			<img class="bulle" src="bulle.png" alt="bulle"/>
+			><iframe class="yt" width="250" height="180" src="https://www.youtube.com/embed/RofgcqpmIAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</span>
+		
+	<footer>
+		<div id="footer">
+		<p>&copy; 2022 - Non c'est une blague y'a aucun copyright. <img class="image" src="pegi3.jpg"/ alt="pegi 3"></p>
+		</div>
+	</footer>
+		
+	</body>
+	
+</html>
